@@ -1,0 +1,75 @@
+Sevde
+Sevde says:<aside>
+        <div class="up-icon">
+            <a href="#header"><i class="fas fa-arrow-circle-up"></i></a>
+        </div>
+    </aside> 
+
+
+
+
+    .up-icon a{
+    font-size: 5rem;
+    position: fixed;
+    bottom: 2%;
+    right: 2%;
+    
+} 
+
+<---------------------------Sevde
+
+
+Said
+Said says:<aside>
+        <!-- Social Media icon bar -->
+
+        <div class="icon-bar">
+            <a href="#" class="facebook"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="youtube"><i class="fab fa-youtube"></i></a>
+        </div>
+    </aside> 
+
+
+    /* ------ Social Media icon bar ------ */
+
+.icon-bar {
+  position: fixed;
+  top: 85vh;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 1rem;
+  transition: all 0.3s ease;
+  color: #fbf6ce;
+  font-size: 4rem;
+}
+
+.icon-bar a:hover {
+  background: #182945;
+  color: #e8e8f0;
+  border-radius: 0.3rem;
+  font-weight: bold;
+}
+
+.facebook {
+  background: #3b5998;
+  color: #fbf6ce;
+}
+
+.twitter {
+  background: #55acee;
+  color: #fbf6ce;
+}
+
+.youtube {
+  background: #bb0000;
+  color: #fbf6ce;
+} 
+
+

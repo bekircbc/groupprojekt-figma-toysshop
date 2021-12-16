@@ -1,0 +1,12 @@
+{
+  "folders": [
+	{
+		"name": "groupprojekt-figma-toysshop",
+		"path": "."
+	}
+],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "groupprojekt-figma-toysshop",
+    "liveServer.settings.port": 5501
+  }
+}

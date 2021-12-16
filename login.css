@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* border: 1px solid red; */
+}
+:root {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.6rem;
+  font-family: sans-serif;
+  background: url(./myAssets/bigOpacity.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+.box {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40rem;
+  padding: 4rem;
+  background: rgba(255, 255, 255, 0.089);
+
+  border-radius: 0.6rem;
+  box-shadow: 0 0.5rem 3.5rem rgba(0, 0, 0, 0.2);
+}
+.box h2 {
+  color: #fff;
+  color: #de9f60;
+  color: #032f5c;
+  font-weight: bolder;
+  font-size: 3.2rem;
+
+  margin: 0;
+  padding: 0 0 3rem;
+  text-align: center;
+}
+.box h2::after {
+  content: "";
+  position: absolute;
+  padding: 0;
+  left: 16rem;
+  bottom: 23rem;
+  width: 8rem;
+  height: 0.1rem;
+  background-color: #de9f60;
+}
+
+.box .inputBox {
+  position: relative;
+}
+.box .inputBox input {
+  width: 100%;
+  padding: 1rem 2rem;
+  font-size: 1.6rem;
+  /* cursor color */
+  color: white;
+  color: rgba(0, 0, 0, 0.76);
+
+  font-weight: bolder;
+  margin-bottom: 3rem;
+  border: none;
+  outline: none;
+  border-bottom: 0.1rem solid #de9f60;
+  background: transparent;
+}
+
+.fas {
+  position: absolute;
+  left: 0;
+  bottom: 4.2rem;
+  color: #032f5c;
+  font-weight: bolder;
+}
+
+::placeholder {
+  color: #032f5c;
+  font-weight: bolder;
+  padding-left: 0.5rem;
+}
+
+.box input[type="submit"] {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #585656;
+  font-weight: bolder;
+  /* background: #eac4d5; */
+
+  background: rgba(255, 255, 255, 0.856);
+  background: linear-gradient(to top, #ffd800, #de9f60);
+
+  /* background: linear-gradient(to top, #ffd800, #de9f60); */
+
+  /* background: rgba(0, 0, 0, 0.13); */
+
+  padding: 1rem 2rem;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  position: relative;
+  left: 40%;
+  transform: translate(50% -50%);
+}
+.box input[type="submit"]:active {
+  background: linear-gradient(to top, #eac4d5, #de9f60);
+}
+
+/* ------------ header -------------- */
+header {
+  background-color: var(--background-darkyellow);
+
+  object-fit: cover;
+  color: var(--text-black);
+  grid-gap: 20rem;
+  width: 80%;
+  height: 10rem;
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: 10rem 50rem 15rem 45rem;
+
+  grid-template-areas: "logo nav . navbar";
+  line-height: 1;
+  font-size: 3rem;
+  margin: 2rem 0;
+}
+
+nav a {
+  padding: 0 3rem 0 3rem;
+  text-decoration: none;
+  color: var(--text-black);
+}
+
+nav a:hover {
+  color: var(--text-red);
+}
+
+.navbar {
+  grid-area: navbar;
+  gap: 10rem;
+}
+
+.navbar a {
+  text-decoration: none;
+  padding: 0 3rem 0 3rem;
+  color: var(--text-black);
+}
