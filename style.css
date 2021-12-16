@@ -10,7 +10,7 @@
 
 :root {
     font-size:62.5%;
-    --shadow:0 1px 5px rgba(104, 104, 104, 0.8);
+    --shadow:0 0.2rem 0.5rem rgba(104, 104, 104, 0.8);
     --gap:5rem;
     --text-black: #000000;
     --text-darkblue:#032f5c;
