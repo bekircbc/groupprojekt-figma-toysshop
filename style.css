@@ -1,4 +1,6 @@
-* {
+*,
+*::before,
+*::after {
     margin:0;
     padding:0;
     box-sizing:border-box;
@@ -26,7 +28,6 @@ body {
     background-color:#f1f1f1;
     color:black;
     font-size:1.6rem;
-    gap:var(--gap);
 }
 
 header {
@@ -45,8 +46,8 @@ header {
     font-size:3rem;
     box-shadow:var(--shadow);
     margin:1rem 0 1rem 0;
-
 }
+
 
 .logo {
     grid-area:logo;
@@ -466,7 +467,7 @@ padding:0.5rem;
 .newsletter-container {
     background-color: #fff5bf;
     display: flex;
-  
+
     width: 92.3%;
     align-items: center;
     margin: 0 auto 4rem;
@@ -486,13 +487,30 @@ padding:0.5rem;
     width: 100%;
     /* background-color: royalblue; */
   }
-  .email-input input {
+
+.img-letter {
+    width: 60%;
+    /* background-color: sandybrown; */
+}
+
+/* .img-letter img {
+    width: 90%;
+  } */
+
+.email-input {
+    padding: 0rem 3rem 1rem;
+    width: 100%;
+    /* background-color: royalblue; */
+}
+
+.email-input input {
     width: 70%;
     padding: 1rem;
     border: none;
     border-radius: 0.2rem;
   }
-  .email-input button {
+
+.email-input button {
     padding: 1rem;
     background-color: #ffd800;
     border: none;
@@ -506,9 +524,9 @@ padding:0.5rem;
     text-align: justify;
     font-weight: 100;
   }
-  
-  /* Footer */
-  .footer-teaser ul {
+
+/* Footer */
+.footer-teaser ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -615,16 +633,6 @@ padding:0.5rem;
     nav a, .navbar a {
       padding:0 1rem 0 1rem;
     }
-/* 
-    .angebot {
-      grid-template-columns: 1fr;
-      grid-template-rows:3rem 30rem 30rem 30rem;
-      grid-template-areas:
-      "h-angebot"
-      "item1"
-      "item2"
-      "item3";
-    } */
 
     .icon-bar {
       display:none;
@@ -632,3 +640,51 @@ padding:0.5rem;
 
 
  } 
+
+.footer-teaser ul li {
+    list-style: none;
+    display: inline-block;
+}
+
+.footer-teaser ul li a {
+    display: block;
+    margin-bottom: 0.8rem;
+}
+
+@media (max-width: 1000px) {
+    .newsletter-container {
+        /* background-color: black; */
+        flex-direction: column;
+        width: 100%;
+    }
+
+
+    .img-letter {
+        -color: skyblue;
+        /* border: 1px solid; */
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .email-input input {
+        width: 70%;
+        margin-right: 1rem;
+    }
+
+    .email-input button {
+        width: 20%;
+    }
+
+    .email-input {
+        /* background-color: springgreen; */
+        display: flex;
+        justify-content: center;
+    }
+
+    .p-box {
+        padding: 0;
+        margin: 0 auto;
+        width: 84%;
+    }
+}
+
