@@ -109,6 +109,7 @@ body {
 }
 
 /* ------------ header -------------- */
+
 header {
   background-color: var(--background-darkyellow);
 
@@ -140,6 +141,7 @@ nav a:hover {
 .navbar {
   grid-area: navbar;
   gap: 10rem;
+  width: 100%;
 }
 
 .navbar a {
