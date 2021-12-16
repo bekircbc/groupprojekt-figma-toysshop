@@ -1,4 +1,4 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap'); */
+
 *,
 *::before,
 *::after {
@@ -23,7 +23,6 @@
     --background-grey:#eeee;
     --background-darkyellow:#ffd800;
     --background-lightyellow:#fff5bf;
-    font-family: Arial, Helvetica, sans-serif;
     
 }
 
@@ -51,6 +50,7 @@ header {
     font-size:3rem;
     box-shadow:var(--shadow);
     margin:1rem 0 1rem 0;
+    font-family:Arial, Helvetica, sans-serif;
 }
 
 
@@ -110,7 +110,8 @@ nav a:hover {
     "shop";
     gap:var(--gap);
     padding:0 0 0 2rem;
-    margin:3rem 5rem;
+    margin:3rem 5rem;    
+    font-family:Arial, Helvetica, sans-serif;
 
 }
 
@@ -130,6 +131,7 @@ nav a:hover {
     "h-angebot h-angebot h-angebot"
     "item1 item2 item3";
     grid-gap:3rem;
+    font-family:Arial, Helvetica, sans-serif;
 
 }
 
@@ -206,6 +208,7 @@ grid-template-areas:
 "one two three five";
 grid-gap:2rem;
 font-size:2rem;
+font-family:Arial, Helvetica, sans-serif;
 
 }
 
@@ -287,6 +290,7 @@ padding:2rem;
     "text2 text2 text2 text2 text2"
     "one2 two2 three2 four2 five2";
     grid-gap:var(--gap);
+    font-family:Arial, Helvetica, sans-serif;
 
 }
 
@@ -378,6 +382,7 @@ padding:2rem;
     "one3 two3 three3";
     grid-gap:var(--gap);
     padding:0 0 0 4rem;
+    font-family:Arial, Helvetica, sans-serif;
 }
 
 .one3, .two3, .three3 {
@@ -421,23 +426,18 @@ padding:0.5rem;
     grid-area:pp;
 
 }
-/*
-i {
-  width: 11px;
-  /* font-family:"Font Awesome 5 Free"; 
-  /* content: "\f007" ; 
-  color:var(--fiil-darkblue);
-  font-size:3.8rem;
-  font-weight:900;
-}*/
 
 .ii {
     grid-area:ii;
-        font-family:"Font Awesome 5 Free";
-        color:var(--fiil-darkblue);
-        font-size:3.8rem;
-        font-weight:900;
+
 } 
+
+.shop i {
+  font-family:"Font Awesome 5 Free";
+  color:var(--fiil-darkblue);
+  font-size:3.8rem;
+  font-weight:900;
+}
 
 /* ------ Social Media icon bar ------ */
 
@@ -546,6 +546,9 @@ i {
   }
 
 /* Footer */
+footer {
+  font-family:Arial, Helvetica, sans-serif;
+}
 .footer-teaser ul {
     display: flex;
     flex-wrap: wrap;
